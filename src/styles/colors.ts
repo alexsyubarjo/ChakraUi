@@ -18,7 +18,9 @@ export const backgroundColor: Color = {
 export const textColor: Color = {
   default: "#000000",
   _dark: "#ffffff",
+  
 };
+
 
 export const cardBackgroundColor: Color = {
   default: "#ffffff",

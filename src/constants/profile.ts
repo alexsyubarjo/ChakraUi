@@ -3,7 +3,7 @@ import type { Profile } from "@/types";
 export const profileData: Profile = {
   name: "Nanda Pratama",
   region: "Indonesia",
-  CV: "/public/assets/pdf/Cv.pdf",
+  CV: "public/assets/pdf/cv.pdf",
   divisions: ["Frontend Developer", "Ui/Ux Design", ""],
   pictures: ["/assets/images/lex.png", "/assets/images/lex.png"],
   descriptions: [

@@ -16,4 +16,10 @@ export const awardList: Award[] = [
     place: "Microsoft Digitelent  ",
     years: "Januari 2024",
   },
+  {
+    award: "Ethical Hacking Unlimited Money",
+    place: "4u Security ",
+    years: "Januari 2024",
+  },
+  
 ];

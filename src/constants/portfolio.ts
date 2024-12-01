@@ -2,34 +2,12 @@ import type { Portfolio } from "@/types";
 
 export const portfolioList: Portfolio[] = [
   {
-    title: "My Personal Portfolio",
-    imageThumbnail: "/assets/images/project-01.webp",
-    description:
-      "This is a personal branding project that I created using Next JS, Tailwind CSS, and Framer Motion. This project consists of a website that showcases my skills, achievements, and personality. The website has seven sections: Home, About, Experiences, Services, Portfolio, Articles, and Contact. The website is designed to be responsive, interactive, and engaging. The website aims to impress and connect with potential clients, employers, and collaborators.",
-    livePreviewURL: "https://muhammad-sufyan-portfolio.vercel.app/",
-    repositoryURL: "",
-    techStack: [
-      {
-        tech: "Next JS",
-        logo: "/assets/svg/next js.svg",
-      },
-      {
-        tech: "Tailwind",
-        logo: "/assets/svg/tailwind.svg",
-      },
-      {
-        tech: "Framer Motion",
-        logo: "/assets/svg/framer motion.svg",
-      },
-    ],
-  },
-  {
     title: "Phantom Landing Page",
     imageThumbnail: "/assets/images/project-02.webp",
     description:
       "Phantom is a website that I created using HTML, CSS, and JavaScript. This website displays information about a company that sells phones with the Phantom brand. This website also showcases the features, specifications, and prices of the Phantom phones, as well as the customer reviews and feedback. This website aims to attract and inform potential buyers about the quality and innovation of the Phantom phones.",
     livePreviewURL: "https://lomba-web-design.vercel.app/",
-    repositoryURL: "https://github.com/Muhammad-Sufyan-901/lomba-web-design",
+    repositoryURL: "",
     techStack: [
       {
         tech: "HTML",
@@ -51,7 +29,7 @@ export const portfolioList: Portfolio[] = [
     description:
       "Petabyte Landing Page is a website that I created using HTML, CSS, and Bootstrap. This website displays information about a software house that operates in the field of education, such as application, website, and educational game creation services. This website also has portfolio, testimonial, and consultation features that make it easy for visitors to know the quality and excellence of this software house.",
     livePreviewURL: "https://petabyte-landing-page.vercel.app/",
-    repositoryURL: "https://github.com/Muhammad-Sufyan-901/petabyte-landing-page",
+    repositoryURL: "",
     techStack: [
       {
         tech: "HTML",
@@ -77,7 +55,7 @@ export const portfolioList: Portfolio[] = [
     description:
       "HooBank is a website that I created using React JS, Tailwind CSS, and Vite. This website displays information about a company that operates in the field of financial digitalization, such as payment, transfer, and online investment services. This website also has security, convenience, and ease features that make it easy for users to manage their finances digitally.",
     livePreviewURL: "https://hoobank-landing-page-rouge.vercel.app/",
-    repositoryURL: "https://github.com/Muhammad-Sufyan-901/hoobank-landing-page",
+    repositoryURL: "",
     techStack: [
       {
         tech: "React JS",
@@ -117,7 +95,7 @@ export const portfolioList: Portfolio[] = [
     description:
       "This is a Twitter clone that I created using Next JS, Typescript, and Tailwind CSS for learning purposes. This website allows users to create, like, and retweet posts from other users. This website also has features such as authentication. This website aims to show my proficiency in using Next JS, Typescript, and Tailwind CSS to create a dynamic and responsive web application.",
     livePreviewURL: "https://twitter-web-clone-mauve.vercel.app/",
-    repositoryURL: "https://github.com/Muhammad-Sufyan-901/twitter-web-clone",
+    repositoryURL: "",
     techStack: [
       {
         tech: "Next JS",
