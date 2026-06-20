@@ -12,14 +12,19 @@ export const awardList: Award[] = [
     years: "Januari - 2023",
   },
   {
-    award: "Artifical Intelegent",
-    place: "Microsoft Digitelent  ",
+    award: "Artificial Intelligence",
+    place: "Microsoft Digitalent",
     years: "Januari 2024",
   },
   {
-    award: "Ethical Hacking Unlimited Money",
-    place: "4u Security ",
-    years: "Januari 2024",
+    award: "Sertifikat Penghargaan CSIRT",
+    place: "Report Kerentanan Pemprov Dki Jakarta",
+    years: "Oktober 2025",
   },
-  
+  {
+    award: "Sertifikat Penghargaan CSIRT",
+    place: "Report Kerentanan Kabupaten Sukoharjo",
+    years: "Maret 2026",
+  },
+
 ];

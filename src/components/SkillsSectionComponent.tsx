@@ -1,9 +1,9 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { Box, Container, Flex, Grid, GridItem, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
-import { FaCode, FaPencilRuler } from "react-icons/fa";
+import { FaCode, FaPencilRuler, FaShieldAlt } from "react-icons/fa";
 import { SectionDescription, SectionSubtitle, SectionTitle, SkillCard } from "@/fragments";
-import { skillList, toolList } from "@/constants";
+import { skillList, toolList, securityToolList } from "@/constants";
 import { fadeInTransition, staggeredContainer } from "@/utils";
 import SectionLayout from "@/layouts/SectionLayout";
 
@@ -76,6 +76,15 @@ function SkillsSectionComponent(): React.JSX.Element {
                   <FaPencilRuler />
                   Tools
                 </Tab>
+                <Tab
+                  fontWeight="semibold"
+                  fontSize={{ base: "1em", lg: "1.1em" }}
+                  _selected={{ color: "primary" }}
+                  columnGap={2}
+                >
+                  <FaShieldAlt />
+                  Security
+                </Tab>
               </TabList>
 
               <TabPanels>
@@ -130,6 +139,32 @@ function SkillsSectionComponent(): React.JSX.Element {
                     )}
                   </Grid>
                 </TabPanel>
+
+                {/* Skills Section Security Tools Content */}
+                <TabPanel>
+                  <Grid
+                    templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(3, 1fr)", lg: "repeat(4, 1fr)", xl: "repeat(5, 1fr)" }}
+                    justifyContent="center"
+                    gap={8}
+                  >
+                    {securityToolList.map(
+                      ({ skillIcon, title, level, description }, index): React.ReactNode => (
+                        <GridItem
+                          as={motion.div}
+                          variants={fadeInTransition("up", "tween", index * 0.1, 1.1)}
+                          key={`Security - ${index} : ${title}`}
+                        >
+                          <SkillCard
+                            skillIcon={skillIcon}
+                            title={title}
+                            level={level}
+                            description={description}
+                          />
+                        </GridItem>
+                      )
+                    )}
+                  </Grid>
+                </TabPanel>
               </TabPanels>
             </Tabs>
           </GridItem>
@@ -148,9 +183,9 @@ function SkillsSectionComponent(): React.JSX.Element {
               alignItems="center"
               rowGap={{ base: 3, lg: 5 }}
             >
-              <SectionSubtitle textAlign={{ lg: "end" }}>Tech Stack⚙️ & Tools🛠️</SectionSubtitle>
+              <SectionSubtitle textAlign={{ lg: "end" }}>Tech Stack⚙️ Tools🛠️ & Security🛡️</SectionSubtitle>
 
-              <SectionDescription textAlign={{ base: "center", lg: "end" }}>There are some tech stack and tools that i&apos;ve learned and experienced</SectionDescription>
+              <SectionDescription textAlign={{ base: "center", lg: "end" }}>There are some tech stack, tools, and security pentesting tools that i&apos;ve learned and experienced</SectionDescription>
             </Flex>
           </GridItem>
         </Grid>

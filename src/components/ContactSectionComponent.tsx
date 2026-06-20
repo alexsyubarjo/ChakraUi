@@ -307,10 +307,10 @@ function ContactSectionComponent(): React.JSX.Element {
               <Flex
                 justifyContent="center"
                 marginTop={8}
+                as={motion.div}
+                variants={fadeInTransition("up", "tween", 0.2, 1)}
               >
                 <PrimaryButton
-                  as={motion.button}
-                  variants={fadeInTransition("up", "tween", 0.2, 1)}
                   type="submit"
                   isLoading={isSubmitting}
                   isDisabled={!isValid || isSubmitting}

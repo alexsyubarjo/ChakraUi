@@ -3,8 +3,8 @@ import type { Profile } from "@/types";
 export const profileData: Profile = {
   name: "Nanda Pratama",
   region: "Indonesia",
-  CV: "public/assets/pdf/cv.pdf",
-  divisions: ["Frontend Developer", "Ui/Ux Design", ""],
+  CV: "/assets/pdf/CV ATS - Frontend UIUX Security Pentesting.pdf",
+  divisions: ["IT Enthusist", "Cyber Security", "Software Engineering"],
   pictures: ["/assets/images/lex.png", "/assets/images/lex.png"],
   descriptions: [
     "I create stunning websites for your business, Intermediate experienced in web design and development.",
