@@ -1,8 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { navigationLinkList, profileData, socialMediaList } from "@/constants";
-import { Link } from "@chakra-ui/next-js";
 import { fadeInTransition, staggeredContainer, textVariantTransition } from "@/utils";
 
 export default function FooterComponent(): React.JSX.Element {
@@ -65,12 +65,12 @@ export default function FooterComponent(): React.JSX.Element {
         {navigationLinkList.map(
           ({ title, href }, index): React.ReactNode => (
             <Link
+              as={NextLink}
               key={`#${title} - ${index}`}
               href={`#${href}`}
               color="white"
               fontWeight="normal"
               fontSize="1rem"
-              scroll={false}
               _hover={{
                 color: "secondary",
                 textDecoration: "none",

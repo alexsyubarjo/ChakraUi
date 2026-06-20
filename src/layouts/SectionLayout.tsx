@@ -1,7 +1,7 @@
-  import * as React from "react";
+import * as React from "react";
 import { motion } from "framer-motion";
-import { Box, Flex, Show, Tooltip } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/next-js";
+import NextLink from "next/link";
+import { Box, Flex, Link, Show, Tooltip } from "@chakra-ui/react";
 import { navigationLinkList, socialMediaList } from "@/constants";
 import { fadeInTransition, staggeredContainer } from "@/utils";
 
@@ -90,8 +90,8 @@ export default function SectionLayout(MainSection: React.FunctionComponent, acti
                   hasArrow
                 >
                   <Link
+                    as={NextLink}
                     href={`/#${href}`}
-                    scroll={false}
                     aria-label="Section Navigation Indicator Button"
                   >
                     <Box

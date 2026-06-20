@@ -1,7 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { Card, CardBody, Flex, Heading, Text } from "@chakra-ui/react";
-import { Image } from "@chakra-ui/next-js";
+import { Card, CardBody, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import type { ContactCard } from "@/types";
 
 type ContactCardProps = ContactCard;
@@ -32,8 +31,8 @@ export default function ContactCard({ title, contactVia, contactLink, cardIcon }
         <Image
           src={cardIcon}
           alt="Contact Card Icon"
-          width={12}
-          height={12}
+          boxSize={12}
+          objectFit="contain"
           transition="all 300ms"
           _groupHover={{
             transform: "translateY(-0.75rem)",

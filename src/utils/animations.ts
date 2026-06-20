@@ -1,5 +1,4 @@
-import { keyframes } from "@chakra-ui/react";
-import type { Keyframes } from "@emotion/react";
+import { keyframes, type Keyframes } from "@emotion/react";
 
 export const bouncingAnimation: Keyframes = keyframes`
   0%, 100% {

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Link } from "@chakra-ui/next-js";
-import { Show, Flex, Drawer, DrawerContent, DrawerCloseButton, DrawerBody, DrawerHeader } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { Show, Flex, Drawer, DrawerContent, DrawerCloseButton, DrawerBody, DrawerHeader, Link } from "@chakra-ui/react";
 import { navigationLinkList } from "@/constants";
 
 type MobileHeaderComponentProps = {
@@ -45,6 +45,7 @@ export default function MobileHeaderComponent({ isOpen, onClose, activeHref }: M
                 {navigationLinkList.map(
                   ({ title, href }, index): React.ReactNode => (
                     <Link
+                      as={NextLink}
                       key={`#${title} - ${index}`}
                       href={`/#${href}`}
                       color={href === activeHref ? "primary" : "text"}
